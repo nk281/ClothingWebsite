@@ -1,0 +1,189 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothingBrand</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #header {
+        position: fixed; 
+        height: 10%;  
+        }
+        #page1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(28563DBE-E701-43A9-9244-6C37DE3184D0_1_201_a.jpeg);
+            background-size: cover;
+            background-position: center;
+            object-fit: fill;
+
+        }
+        
+        form h2{
+            text-align: center;
+            margin-bottom: 80px;
+            font-size: 50px;
+            color: #f8f5f5;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        form{
+            width: 400px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        .form-group{
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .form-group input{
+            width: 100%;
+            padding: 20px;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            background: transparent;
+            font-size: 16px;
+            outline: none;
+        }
+        .form-group label{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: #ffffff;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.3s;
+        }
+        .form-group input:focus + label,
+        .form-group input:not(:placeholder-shown) + label{
+            top: -20px;
+            left: 0;
+            font-size: 12px;
+            color: #fffafa;
+        }
+        .form-group i{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fffbfb;
+            font-size: 20px;
+        }
+
+       .form-group .remember-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #ffffff;
+        }
+
+       .form-group .remember-row a {
+           color: #3498db;
+           text-decoration: none;
+        }
+
+        .form-group .remember-row a:hover {
+           text-decoration: underline;
+        }
+
+        .form-group input[type="button"] {
+           width: 100%;
+           padding: 10px;
+           border-color: #f6f4f4;
+           background: rgba(0, 0, 0, 0.5);
+           color: #fff;
+           font-size: 16px;
+           border-radius: 50px;
+           cursor: pointer;
+           transition: 0.3s;
+           margin-top: 20px;
+        }
+
+        .form-group input[type="button"]:hover {
+           background: #000000;
+           margin-top: 20px;
+        }
+
+        .form-group .register-link {
+           text-align: center;
+           margin-top: 90px;
+           font-size: 14px;
+           display: flex;
+        }
+
+        .form-group .register-link a {
+           color: #3498db;
+           text-decoration: none;
+        }
+
+        .form-group .register-link a:hover {
+           text-decoration: underline;
+        }
+
+        .form-group label input[type="checkbox"] {
+           width: 15px;
+           height: 15px;
+           margin-top: 60px;
+           margin-left: 170px;
+        }
+
+        .form-group .register-link u {
+           color: rgb(255, 255, 255);
+           text-decoration: none;
+           font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="header"> 
+        <nav>
+            <li>
+              <a href="Index.html">Home</a>
+              <a href="AboutUs.html">AboutUs</a>
+              <a href="contact.html">contact</a>
+              <a href="Login.html">Login</a>
+            </li>
+        </nav>
+        <div id="logo">ClothingBrand</div>
+        <div class="search"><i class="ri-search-eye-line"></i></div>
+        <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+    </div>
+
+    <div id="page1">
+<form action="">
+    <h2>Login</h2>
+   <div class="form-group">
+    <input type="email" required placeholder=" ">
+    <label>Email</label>
+    <i class="ri-login-box-line"></i>
+   </div> 
+   <div class="form-group">
+    <input type="password" required placeholder=" ">
+    <label>Password</label>
+    <i class="ri-lock-2-line"></i>
+    <div class="remember-row">
+      <label><input type="checkbox"> Remember Me</label>
+      <a href="#">Forget Password</a>
+    </div>
+    <input type="button" value="Login">
+    <p class="register-link"><u>Don't Have an Account?</u><a href="#">Register</a></p>
+   </div>
+</form>
+    </div>     
+    </div>
+</div>
+</body>
+</html>

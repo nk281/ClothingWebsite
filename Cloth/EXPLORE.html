@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClothingBrand</title>
+    <link 
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #header {
+        position: fixed; 
+        height: 10%;  
+        }
+        
+        #product1{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            background-size: cover;
+            background-position: center;
+            object-fit: fill;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 80px;
+        }
+
+        #product1 h2{
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #fefefe;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #product1 p{
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .Pro-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+
+        }
+
+        .Pro-box{
+            background: rgba(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .Pro-box img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+
+        }
+
+        .Pro-box h4{
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+
+        .Pro-box button{
+            padding: 10px 20px;
+            background-color: #000000;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }   
+        .Pro-box button:hover{
+            background-color: #333333;
+        }
+        #Pro-container h4{
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        #offer{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fefefe;
+            background-size: cover;
+            background-position: center;
+            object-fit: contain;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 80px;
+        }
+        #limited {
+            width: 50%;
+        }
+        #limited h2{
+            font-size: 40px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #limited p{
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #000000;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #B1G1 {
+            width: 50%;
+        }
+        #B1G1 h2{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 10px;
+            color: #000000;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #B1G1 p{
+            font-size: 20px;
+            text-align: center; 
+            margin-bottom: 40px;
+            color: #000000;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #product2{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000000;
+            background-size: cover;
+            background-position: center;
+            object-fit: fill;
+            flex-direction: column;
+            text-align: center;
+            padding: 60px 80px;
+        }
+        #product2 h2{
+            font-size: 50px;
+            margin-bottom: 10px;
+            color: #fefefe;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #product2 p{
+            font-size: 30px;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #product2 h4{
+            font-size: 15px;
+            color: #000000;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="header"> 
+        <nav>
+            <li>
+              <a href="Index.html">Home</a>
+              <a href="AboutUs.html">AboutUs</a>
+              <a href="contact.html">contact</a>
+              <a href="Login.html">Login</a>
+            </li>
+        </nav>
+        <div id="logo">ClothingBrand</div>
+        <div class="search"><i class="ri-search-eye-line"></i></div>
+        <div class="cart"><i class="ri-shopping-cart-2-line"></i></div>
+    </div>
+
+        <section id="product1">
+            <h2>CATEGORIES</h2>
+            <p>Choose your Clothing Category to find your perfect match.</p>
+            <div class="Pro-container">
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/736x/be/0e/b9/be0eb911931d5d8cd0350647301a0037.jpg" alt="Adidas">
+                    <h4>T-Shirts</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/736x/48/e6/05/48e6058e69a48a385cb16844ac7cb2ff.jpg" alt="Nike">
+                    <h4>Shirts</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/736x/69/33/b3/6933b3d5fc9016682f04028645e71616.jpg" alt="Puma">
+                    <h4>OverSized T-Shirts</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/736x/af/bc/9d/afbc9d8917ae03472e561a57b639ead4.jpg" alt="Reebok">
+                    <h4>SweatShirts</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+            </div>
+        </section>
+        <div id="offer">
+            <div id="limited">
+                <h2>LIMITED TIME OFFER</h2>
+                <p>Get 30% off on your first purchase! Use code: FIRST30 at checkout.</p>
+            </div>
+
+            <div id="B1G1">
+                <h2>BUY 1 GET 1 FREE</h2>
+                <p>Exclusive deal on selected items. Don't miss out!</p>
+            </div>
+        </div>
+        <section id="product2">
+            <h2>NEW ARRIVALS</h2>
+            <p>Check out the latest additions to our collection.</p>
+            <div class="Pro-container">
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/1200x/f6/68/cd/f668cd7930a75c589bc60f513001383f.jpg" alt="Adidas">
+                    <h4>Black OverSized Casual T-shirt</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/736x/d4/73/34/d473343751e3afd2c9a62d4304e50e6c.jpg" alt="Nike">
+                    <h4>Black Jersey 87 no.</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/1200x/51/60/e3/5160e3fe3a98e7769fe764b6910b8532.jpg" alt="Puma">
+                    <h4>Back Printed Blue Shirt</h4>
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+                <div class="Pro-box">
+                    <img src="https://i.pinimg.com/1200x/23/40/39/234039711292827d91a7ffa0d4324ba6.jpg" alt="Reebok">
+                    <h4>Cream colored Printed Sweatshirt </h4> 
+                    <a href="Shop.html"><button>SHOP NOW</button></a>
+                </div>
+</div>
+</body>
+</html>
